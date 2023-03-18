@@ -27,7 +27,7 @@ body{
     height: 600px;
     width: 600px;
     border: 2px solid white;
-    background-color: orange;
+    background-color: rgb(6, 255, 89);
     border-radius: 5px;
     overflow: hidden;
     display: grid;
