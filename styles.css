@@ -1,0 +1,69 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    
+    
+    background-image: url('./Assets/SnakeGame\ Background.jpg');
+    
+}
+
+.board{
+    height: 600px;
+    width: 600px;
+    border: 2px solid white;
+    background-color: orange;
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+
+.head{
+    background-image: url('./Assets/animal_head_face_cartoon-23-512.webp');
+    background-size: contain;
+    
+}
+
+.snake-body{
+    background:linear-gradient(125deg,#BFDB38,#1F8A70);
+}
+
+.food{
+    background-image: url('./Assets/food.jpg');
+    background-size: contain;
+}
+
+
+.score{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 2rem;
+    font-family: 'Eater', cursive;
+    text-shadow: 3px 3px 5px white;
+}
+.high-score{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 2rem;
+
+    font-family: 'Eater', cursive;
+    text-shadow: 3px 3px 5px white;
+
+}
