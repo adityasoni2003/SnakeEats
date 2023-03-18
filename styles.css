@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
     
 
@@ -14,6 +15,8 @@ body{
     display: flex;
     place-content: center;
     align-items: center;
+    --rotation:90deg;
+    --body-rotation:90deg;
     
     
     background-image: url('./Assets/SnakeGame\ Background.jpg');
@@ -28,23 +31,36 @@ body{
     border-radius: 5px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+     place-content: center;
+    /* align-items: center;  */
 }
 
 
 .head{
+    
     background-image: url('./Assets/animal_head_face_cartoon-23-512.webp');
     background-size: contain;
+    transform: rotate(calc(var(--rotation) * 1deg));
     
 }
 
 .snake-body{
     background:linear-gradient(125deg,#BFDB38,#1F8A70);
+    border-radius: 50%;
+    border: 1px solid white;
+    min-width: 50%;
+    min-height: 100%;
+    display: block;
+    margin: auto;
+    
+
+    transform: rotate(calc(var(--body-rotation) * 1deg));
 }
 
 .food{
-    background-image: url('./Assets/food.jpg');
+    background-image: url('./Assets/pngtree-cute-cartoon-animal-head-mouse-png-image_6254019.png');
     background-size: contain;
 }
 
