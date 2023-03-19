@@ -63,6 +63,7 @@ function mainGameEngine(){
     }
 
     if(snake[0].x == food.x && snake[0].y == food.y){
+        eatAudio.play();
         
         score += 1;
         if (score > HiScore){
